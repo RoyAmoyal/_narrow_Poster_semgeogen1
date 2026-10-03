@@ -1,5 +1,5 @@
-\documentclass[18pt,margin=1.1cm]{tikzposter}
-\geometry{paperwidth=90cm,paperheight=150cm}
+\documentclass[20pt,margin=1.0cm,blockverticalspace=1.1cm]{tikzposter}
+\geometry{paperwidth=90cm,paperheight=120cm}
 
 % ============================================================
 % Packages
@@ -33,6 +33,7 @@
 \tikzposterlatexaffectionproofoff
 \usetheme{UWTheme}
 \usecolorstyle{UWStyle}
+\useblockstyle[titleinnersep=0.6cm,bodyinnersep=0.75cm]{Default}
 
 % ============================================================
 % Global spacing
@@ -89,8 +90,8 @@
 % ============================================================
 \title{%
 \parbox{0.93\linewidth}{\centering\bfseries
-Cross-Instance Gaussian Splatting Registration via\\[-0.12em]
-Geometry-Aware Feature-Guided Alignment}
+Cross-Instance Gaussian Splatting Registration\\[-0.12em]
+via Geometry-Aware Feature-Guided Alignment}
 }
 
 \author{Roy Amoyal \quad Oren Freifeld \quad Chaim Baskin}
@@ -101,11 +102,11 @@ Geometry-Aware Feature-Guided Alignment}
 \maketitle
 
 % Logos
-\node[anchor=west,yshift=5cm,xshift=1.2cm] at (TP@title.west)
-{\includegraphics[trim=0mm 20mm 0mm 20mm,clip,height=5.5cm]{images/logos/logo_bgu.pdf}};
+\node[anchor=west,yshift=2.8cm,xshift=1.0cm] at (TP@title.west)
+{\includegraphics[trim=0mm 20mm 0mm 20mm,clip,height=4.6cm]{images/logos/logo_bgu.pdf}};
 
-\node[anchor=east,yshift=5cm,xshift=-1.2cm] at (TP@title.east)
-{\includegraphics[trim=0mm 0mm 0mm 0mm,clip,height=5.9cm]{images/logos/CVPR_Logo1_Denver 2026_Color.png}};
+\node[anchor=east,yshift=2.8cm,xshift=-1.0cm] at (TP@title.east)
+{\includegraphics[trim=0mm 0mm 0mm 0mm,clip,height=4.9cm]{images/logos/CVPR_Logo1_Denver 2026_Color.png}};
 
 \begin{columns}
 
@@ -152,7 +153,7 @@ that aligns the source model $\G_1$ to the target model $\G_2$.
     trim=5mm 7mm 7mm 5mm,
     clip,
     width=1\linewidth,
-    height=17cm,
+    height=12cm,
     keepaspectratio
 ]{images/semantic_geometric_features.png}
 
@@ -194,7 +195,7 @@ Low-resolution 2D semantic-geometric features are lifted into 3DGS and rendered 
     trim=7mm 45mm 7mm 8mm,
     clip,
     width=1.0\linewidth,
-    height=20.2cm,
+    height=15.5cm,
     keepaspectratio
 ]{images/method_figure.png}
 
@@ -323,7 +324,7 @@ The fine stage refines the coarse alignment by rendering both feature-augmented 
     trim=0mm 0mm 0mm 0mm,
     clip,
     width=1.0\linewidth,
-    height=17cm,
+    height=12.5cm,
     keepaspectratio
 ]{images/object_replacement_app.png}
 
@@ -347,7 +348,7 @@ The fine stage refines the coarse alignment by rendering both feature-augmented 
     trim=90mm 40mm 0mm 30mm,
     clip,
     width=\linewidth,
-    height=15.6cm,
+    height=8.4cm,
     keepaspectratio
 ]{images/cross_boat.png}
 
@@ -368,7 +369,7 @@ The fine stage refines the coarse alignment by rendering both feature-augmented 
     trim=90mm 45mm 0mm 0mm,
     clip,
     width=\linewidth,
-    height=15.6cm,
+    height=8.4cm,
     keepaspectratio
 ]{images/cross_airplane.png}
 
@@ -432,7 +433,7 @@ GaussReg & 18.60 & 0.07 \\
 
 \renewcommand{\arraystretch}{1.1}
 \setlength{\tabcolsep}{4pt}
-\resizebox{0.98\linewidth}{!}{%
+\resizebox{0.92\linewidth}{!}{%
 \begin{tabular}{lcccccc}
 \toprule
 \textbf{Method} & \textbf{Airplane} & \textbf{Bus} & \textbf{Boat} & \textbf{Car} & \textbf{Chair} & \textbf{Motor.} \\
