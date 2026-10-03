@@ -115,7 +115,7 @@ via Geometry-Aware Feature-Guided Alignment}
 % ============================================================
 \column{0.49}
 
-\block{\huge Motivation \& Problem}{
+\block{\huge\vphantom{Akg}Motivation \& Problem}{
 \Large
 \textbf{Goal: category-level 3DGS alignment.}
 Given two independently reconstructed Gaussian Splatting models, estimate a global similarity transform
@@ -147,7 +147,7 @@ that aligns the source model $\G_1$ to the target model $\G_2$.
 \end{minipage}
 }
 
-\block{\huge Geometry-Aware Semantic Features}{
+\block{\huge\vphantom{Akg}Geometry-Aware Semantic Features}{
 \centering
 \includegraphics[
     trim=5mm 7mm 7mm 5mm,
@@ -189,7 +189,7 @@ Geometry-aware semantic features capture both semantic similarity
 Low-resolution 2D semantic-geometric features are lifted into 3DGS and rendered as high-resolution feature maps.
 }
 
-\block{\huge GSA Overview}{
+\block{\huge\vphantom{Akg}GSA Overview}{
 \centering
 \includegraphics[
     trim=7mm 45mm 7mm 8mm,
@@ -205,7 +205,7 @@ Low-resolution 2D semantic-geometric features are lifted into 3DGS and rendered 
 \textbf{GSA Full Pipeline}
 }
 
-\block{\huge Coarse: Feature-Guided Sim(3) Solver}{
+\block{\huge\vphantom{Akg}Coarse: Feature-Guided Sim(3) Solver}{
 \Large
 \textbf{Idea:} extend ICP-like absolute orientation with semantic-geometric pruning, then solve a closed-form Sim(3) update.
 
@@ -235,7 +235,7 @@ T^{(k)}=\arg\min_{T\in\Sim(3)}
 The coarse stage is robust to poor initializations, including large rotations, scale gaps, and cross-instance shape variation.
 }
 
-\block{\huge QR Code \& References}{
+\block{\huge\vphantom{Akg}QR Code \& References}{
 \noindent
 \begin{minipage}[t]{0.25\linewidth}
 \vspace{0pt}
@@ -261,7 +261,7 @@ Scan for paper, code, video, and additional results.
 % RIGHT COLUMN
 % ============================================================
 \column{0.49}
-\block{\huge Fine: From Inverse Radiance Fields to MVFC}{
+\block{\huge\vphantom{Akg}Fine: From Inverse Radiance Fields to MVFC}{
 \Large
 
 \noindent\makebox[\linewidth][c]{\textbf{Classical inverse radiance-field pose estimation [2]}}\\[-1em]
@@ -314,7 +314,7 @@ The fine stage refines the coarse alignment by rendering both feature-augmented 
 }
 
 
-\block{\huge Qualitative Results}{
+\block{\huge\vphantom{Akg}Qualitative Results}{
 \centering
 
 {\Large\textbf{Geometrically Consistent Object Replacement}}\par
@@ -376,7 +376,7 @@ The fine stage refines the coarse alignment by rendering both feature-augmented 
 \end{minipage}
 }
 
-\block{\huge Quantitative Results}{
+\block{\huge\vphantom{Akg}Quantitative Results}{
 \centering
 \Large
 
